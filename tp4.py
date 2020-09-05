@@ -1,3 +1,15 @@
-Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 22:22:05) [MSC v.1916 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
->>> 
+
+S = 0
+OS = 0
+AP = 0
+EMPLEADOS = []
+X = int(input("Ingrese\n 1.COMENZAR\n 2.CERRAR"))
+while X == 1:
+    N = input("Ingrese nombre completo del empleado: ")
+    S = float(input("Ingrese sueldo del empleado: "))
+    OS = S*3/100
+    AP = S*11/100
+    SUELDO = (S-OS-AP)
+    E = int(input("Ingrese:\n 1.SOLTERO\n 2.CASADO CON HIJOS\n 3.CASADO SIN HIJOS"))
+
+    
