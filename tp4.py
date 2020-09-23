@@ -12,6 +12,7 @@ while X == 1:
     OBRASOCIAL = SUELDO*3/100
     APORTE = SUELDO*11/100
     SUELDOFINAL = (SUELDO-OBRASOCIAL-APORTE)
+    print("SUELDO:", SUELDO, " \n DESCUENTOS: -", OBRASOCIAL, "-", APORTE, "\n TOTAL:", SUELDOFINAL)
     ESTADO = int(input("Ingrese:\n 1.SOLTERO\n 2.CASADO CON HIJOS\n 3.CASADO SIN HIJOS"))
     if ESTADO == 1:
         print ("Total a depositar a", NOMBRE, "es de: $ ", SUELDOFINAL)
