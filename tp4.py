@@ -4,7 +4,6 @@ APORTE = 0
 TOTALFINAL=0
 TOTAL=0
 EMPLEADOS = []
-IMPUESTO A LA GANANCIA
 X = int(input("Ingrese\n 1.COMENZAR\n 2.CERRAR"))
 while X == 1:
     NOMBRE = input("Ingrese nombre completo del empleado: ")
@@ -15,13 +14,16 @@ while X == 1:
     print("SUELDO:", SUELDO, " \n DESCUENTOS: -", OBRASOCIAL, "-", APORTE, "\n TOTAL:", SUELDOFINAL)
     ESTADO = int(input("Ingrese:\n 1.SOLTERO\n 2.CASADO CON HIJOS\n 3.CASADO SIN HIJOS"))
     if ESTADO == 1:
+        print("SUELDO:",SUELDO, "\n ESTADO= SOLTERO \n TOTAL=", SUELDOFINAL)
         print ("Total a depositar a", NOMBRE, "es de: $ ", SUELDOFINAL)
         TOTAL=SUELDOFINAL
     if ESTADO == 2:
-        TOTAL = SUELDO + 900
+        TOTAL = SUELDOFINAL + 900
+        print("SUELDO:",SUELDO, "\n ESTADO= CASADO CON HIJOS \n TOTAL=", SUELDOFINAL, "+ 900")
         print ("El total a depositar a", NOMBRE, "es de: $ ", TOTAL)
     if ESTADO == 3:
-        TOTAL = SUELDO + 500
+        TOTAL = SUELDOFINAL + 500
+        print("SUELDO:",SUELDO, "\n ESTADO= CASADO SIN HIJOS \n TOTAL=", SUELDOFINAL, "+ 500")
         print ("El total a depositar a", NOMBRE, "es de: $ ", TOTAL)
     TOTALFINAL=TOTALFINAL+TOTAL
     EMPLEADOS.append(NOMBRE)
